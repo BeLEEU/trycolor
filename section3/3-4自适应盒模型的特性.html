@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1{
+            background-color: seashell;
+            height: 200px;
+            width: 300px;
+        }
+        .div2{
+            background-color: pink;
+            height: 100px;
+            margin:10px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        1.当给block子元素设置宽时，修改padding、margin等会在原来宽基础上变大
+        2.当子元素不设置宽时，会在父元素宽的范围内进行自适应调整
+    </p>
+    <div class="div1">
+        <div class="div2">
+            里面
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+           height: 60px;
+           width: 60px; 
+        }
+        .div1{
+            margin-bottom: -20px;
+            background-color: aqua;
+            margin-bottom: 30px;
+        }
+        .div2{
+            background-color:blueviolet;
+            opacity: 0.5;
+            border: 10px solid white;
+            margin-top: 20px;
+        }
+        .div3{
+            height: 30px;
+            width: 30px;
+            background-color: rosybrown;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <p>每一个元素都是盒模型，由content、padding、border、margin组成</p>
+    <p>padding不能为负值，但是margin可以</p>
+    <p>背景色会平铺到非margin的区域</p>
+    <p>margin-top会有传递到父元素的现象,可以通过添加border解决</p>
+    <p>margin上下会出现重叠现象</p>
+    <div class="div1"></div>
+    <div class="div2">
+        <div class="div3"> 
+        </div>
+    </div>
+</body>
+</html>
